@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ExamDetailsInstantFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+          <TextView
+              android:id="@+id/institl"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textStyle="bold"
+              android:textSize="20dp"
+              android:textColor="@color/colorPrimaryDark"
+              android:text="Details of ONLINE Examinations"/>
+            <ImageView
+                android:id="@+id/eximg1"
+                android:layout_width="650dp"
+                android:layout_height="250dp"
+                android:scaleType="fitCenter"
+                android:scaleX="1"
+                android:scaleY="1.1"
+                android:layout_below="@+id/institl"
+                android:src="@drawable/onlineexam2"/>
+            <ImageView
+                android:id="@+id/eximg2"
+                android:layout_width="650dp"
+                android:layout_height="250dp"
+                android:scaleType="fitCenter"
+                android:scaleX="1"
+                android:scaleY="1.1"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/eximg1"
+                android:src="@drawable/onlineexam3"/>
+
+            <ImageView
+                android:id="@+id/eximg3"
+                android:layout_width="650dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eximg1"
+                android:layout_marginTop="94dp"
+                android:scaleType="fitCenter"
+                android:scaleX="1"
+                android:scaleY="1.1"
+                android:layout_marginBottom="-50dp"
+                android:src="@drawable/onlineexam4" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

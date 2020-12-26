@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_15"
+    android:id="@+id/parent"
+    tools:context=".AboutUsActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_100"
+        android:visibility="gone"
+        app:srcCompat="@drawable/mob_logo"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/title"
+                android:padding="@dimen/padding_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_10"
+                android:text="WHO WE ARE"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimaryDark"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/text_size_20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_marginTop="@dimen/padding_5"
+                android:text="@string/whoWeAre"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt1"
+                android:layout_marginTop="@dimen/padding_10"
+                android:text="ABOUT MISE"
+                android:padding="@dimen/padding_5"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimaryDark"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/text_size_20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title1"
+                android:layout_marginTop="@dimen/padding_5"
+                android:text="@string/aboutMise"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt2"
+                android:layout_marginTop="@dimen/padding_10"
+                android:text="OUR TEAM"
+                android:padding="@dimen/padding_5"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimaryDark"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/text_size_20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title2"
+                android:layout_marginTop="@dimen/padding_5"
+                android:text="@string/ourTeam"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/title3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt3"
+                android:padding="@dimen/padding_5"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimaryDark"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/padding_10"
+                android:text="WHAT WE DO ?"
+                android:textSize="@dimen/text_size_20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title3"
+                android:layout_marginTop="@dimen/padding_5"
+                android:text="@string/whatWeDo"
+                android:textStyle="normal" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="-250dp"
+            android:background="?android:attr/windowBackground"
+            android:enabled="true"
+            app:itemBackground="@color/white"
+            app:itemIconSize="22dp"
+            app:itemIconTint="@color/colorPrimary"
+            app:itemTextColor="@color/colorPrimary"
+            app:labelVisibilityMode="labeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.62"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/navigation" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

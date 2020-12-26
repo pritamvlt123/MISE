@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent"
+    android:background="@drawable/background"
+    tools:context=".Activities.AwardsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:fitsSystemWindows="true"
+            app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Display1"
+            app:toolbarId="@+id/toolbar">
+
+            <com.massivedisaster.widget.ArcToolbarView
+                android:id="@+id/arcToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/toolbar_gradient" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin">
+            </androidx.appcompat.widget.Toolbar>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/mise" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/vw1"
+        tools:ignore="MissingConstraints">
+    <RadioGroup
+        android:id="@+id/radioGroup11"
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Online"/>
+
+        <RadioButton
+            android:id="@+id/radioButton22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Offline"/>
+
+    </RadioGroup>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#b3d5ff"
+            android:visibility="visible">
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="8dp" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:id="@+id/rl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/l1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/hd1"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="50dp"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:textAlignment="center"
+                            android:text="CLASS" />
+
+                        <TextView
+                            android:id="@+id/hd2"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="50dp"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14dp"
+                            android:layout_marginLeft="1dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:textAlignment="center"
+                            android:text="SUBJECTS" />
+                        <TextView
+                            android:id="@+id/hd3"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="50dp"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14dp"
+                            android:layout_marginLeft="1dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:textAlignment="center"
+                            android:text="60-69%" />
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="50dp"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14dp"
+                            android:layout_marginLeft="1dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:textAlignment="center"
+                            android:text="70-74%" />
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="50dp"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14dp"
+                            android:layout_marginLeft="1dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:textAlignment="center"
+                            android:text="75-79%" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/l2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:weightSum="5"
+                        android:layout_below="@+id/l1"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/kprogresshud_grey_color"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="KG"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="3"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="MC+ MT"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="EK/TROPHYMC+M"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="1200/- +MC+M"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/l3"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/l2"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/kprogresshud_grey_color"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="I To"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="3"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="MC+ MT"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="	EK/TROPHY
+MC+M"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="1200/-
++MC+M"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/l4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/l3"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/kprogresshud_grey_color"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="V"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="7"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="CP+MC+ MT"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="EK/TROPHY
+MC+M"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="2500/-
++MC+M"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/l5"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:weightSum="5"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/l4"
+                        android:background="@color/kprogresshud_grey_color"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="VI TO"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="3"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="MC+ MT"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="EK/TROPHY
+MC+M"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="1500/-
++MC+M"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/l6"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:weightSum="5"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/l5"
+                        android:background="@color/kprogresshud_grey_color"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="XII"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="7"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="CP+MC+ MT"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="EK/TROPHY
+MC+M"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="3000/-
++MC+M"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl2"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/rl1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/ll1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimaryDark"
+                            android:padding="5dp"
+                            android:text="CLASS"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimaryDark"
+                            android:padding="5dp"
+                            android:text="SUBJECTS"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimaryDark"
+                            android:padding="5dp"
+                            android:text="80-84%"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimaryDark"
+                            android:padding="5dp"
+                            android:text="85-89%"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimaryDark"
+                            android:padding="5dp"
+                            android:text="90% &amp; ABOVE"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+                        android:layout_below="@+id/ll1"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/kprogresshud_grey_color"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="KG"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="3"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="2250/-
++MC+SM"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="5000/-
++MC+BM"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="2000/- PM (12 months)
++GM+MC"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll3"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll2"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/kprogresshud_grey_color"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="I To"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="3"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="2250/-
+                        +MC+SM"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="5000/-
++MC+BM"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="2000/- PM (12 months)
++GM+MC+Workshop(1)"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll3"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/kprogresshud_grey_color"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="V"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="7"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="4500/-
++MC+SM"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="10000/-
++MC+BM"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="2000/- PM (12 months)
++LAPTOP+GM+MC+Workshop(2)"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll5"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:weightSum="5"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/ll4"
+                        android:background="@color/kprogresshud_grey_color"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="VI TO"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="3"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="3000/-
++MC+SM"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="7500/-
++MC+BM"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="NATIONAL STUDY TRIP"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/ll5"
+                        android:background="@color/kprogresshud_grey_color"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="XII"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="7"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="6000/-
++MC+SM"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="12500/-
++MC+BM+Workshop"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:text="INTERNATIONAL STUDY TRIP"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text=""/>
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="-250dp"
+            android:background="?android:attr/windowBackground"
+            android:enabled="true"
+            app:itemBackground="@color/white"
+            app:itemIconSize="22dp"
+            app:itemIconTint="@color/colorPrimary"
+            app:itemTextColor="@color/colorPrimary"
+            app:labelVisibilityMode="labeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.62"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/navigation" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="300dp"
+      android:layout_height="150dp"
+      android:background="@drawable/layout_bg"
+      android:elevation="4dp"
+      android:padding="10dp"
+      android:translationZ="10dp"
+      app:cardCornerRadius="8dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/tvChapterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="100dp"
+        android:padding="10dp"
+        android:text="teytryr teytryr teytryrteytryr teytryr \nteytryr teytryr teytryr"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvChapterName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:text="700.00"
+        android:textSize="15sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/colorPrimaryDark"
+        android:clickable="false"
+        android:text="Select"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+  </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,1040 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExamDetailScheduledFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/institl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Details of Scheduled Examinations"/>
+            <TextView
+                android:id="@+id/inssubtitl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:layout_below="@+id/institl"
+                android:textSize="12dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/cardview_dark_background"
+                android:text="Scheduled examination is specially designed for the students, those who want to judge themselves while competing with others at the same time and on the same question set. A student can participate once in scheduled exams based on pre-defined schedule."/>
+            <TextView
+                android:id="@+id/instit"
+                android:layout_below="@+id/inssubtitl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="For students of Classes I - V (Scheduled)"/>
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_below="@+id/instit"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/l1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/hd1"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="100dp"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:textAlignment="center"
+                        android:text="SUBJECT" />
+
+                    <TextView
+                        android:id="@+id/hd2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="100dp"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="1dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:textAlignment="center"
+                        android:text="NO.OF QUESTIONS &amp; PATTERN	" />
+                    <TextView
+                        android:id="@+id/hd3"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="100dp"
+                        android:padding="5dp"
+
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="1dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:textAlignment="center"
+                        android:text="DURATION" />
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="100dp"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="1dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:textAlignment="center"
+                        android:text="FULL MARKS" />
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="100dp"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="1dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:textAlignment="center"
+                        android:text="QUALIFYING MARKS
+" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/l2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:weightSum="5"
+                    android:layout_below="@+id/l1"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/kprogresshud_grey_color"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:textAlignment="center"
+                        android:text="Science" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="40 MCQs	" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="45 mins	" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="60" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="30" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l3"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/l2"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/kprogresshud_grey_color"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mathematics"
+                        android:textAlignment="center"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:text="40 MCQs"
+                        android:textAlignment="center"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:text="45 mins"
+                        android:textAlignment="center"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="60" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="30" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/l3"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/kprogresshud_grey_color"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Computer"
+                        android:textAlignment="center"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:text="40 MCQs"
+                        android:textAlignment="center"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:text="45 mins"
+                        android:textAlignment="center"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="60" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="30" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/l5"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:weightSum="5"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/l4"
+                    android:background="@color/kprogresshud_grey_color"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:textAlignment="center"
+                        android:text="English" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="40 MCQs" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="45 mins" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="60" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="30" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/l6"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:weightSum="5"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/l5"
+                    android:background="@color/kprogresshud_grey_color"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:textAlignment="center"
+                        android:text="General Knowledge	" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="40 MCQs" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="45 mins" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="60" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="30" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/l767"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:weightSum="5"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/l6"
+                    android:background="@color/kprogresshud_grey_color"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:textAlignment="center"
+                        android:text="Social Studies" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="40 MCQs" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="45 mins" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="60" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="30" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l9"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:weightSum="5"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/l767"
+                    android:background="@color/kprogresshud_grey_color"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:textAlignment="center"
+                        android:text="Sports" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="40 MCQs" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="45 mins" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="60" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="30" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/institt"
+                android:layout_below="@+id/rl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="For students of Classes VI - XII (Scheduled)"/>
+            <RelativeLayout
+                android:id="@+id/rl2"
+                android:layout_below="@+id/institt"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/lr1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="100dp"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:textAlignment="center"
+                        android:text="SUBJECT" />
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="100dp"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="1dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:textAlignment="center"
+                        android:text="NO.OF QUESTIONS &amp; PATTERN	" />
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="100dp"
+                        android:padding="5dp"
+
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="1dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:textAlignment="center"
+                        android:text="DURATION" />
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="100dp"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="1dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:textAlignment="center"
+                        android:text="FULL MARKS" />
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="100dp"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="1dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:textAlignment="center"
+                        android:text="QUALIFYING MARKS
+" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lr2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:weightSum="5"
+                    android:layout_below="@+id/lr1"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/kprogresshud_grey_color"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:textAlignment="center"
+                        android:text="Science" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="60 MCQs	" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="60 mins	" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="60" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="40" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lr3"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/lr2"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/kprogresshud_grey_color"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mathematics"
+                        android:textAlignment="center"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:text="60 MCQs"
+                        android:textAlignment="center"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:text="60 mins"
+                        android:textAlignment="center"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="60" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="40" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lr4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/lr3"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/kprogresshud_grey_color"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Computer"
+                        android:textAlignment="center"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:text="60 MCQs"
+                        android:textAlignment="center"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:text="60 mins"
+                        android:textAlignment="center"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="60" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="40" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lr5"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:weightSum="5"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/lr4"
+                    android:background="@color/kprogresshud_grey_color"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:textAlignment="center"
+                        android:text="English" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="60 MCQs" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="60 mins" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="60" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="30" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lr6"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:weightSum="5"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/lr5"
+                    android:background="@color/kprogresshud_grey_color"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:textAlignment="center"
+                        android:text="General Knowledge	" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="60 MCQs" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="60 mins" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="60" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="30" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/l57"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:weightSum="5"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/lr6"
+                    android:background="@color/kprogresshud_grey_color"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:textAlignment="center"
+                        android:text="Social Studies" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="60 MCQs" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="60 mins" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="60" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="30" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lr9"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:weightSum="5"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/l57"
+                    android:background="@color/kprogresshud_grey_color"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:textAlignment="center"
+                        android:text="Sports" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="60 MCQs" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="60 mins" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="60" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="1dp"
+                        android:textAlignment="center"
+                        android:text="30" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

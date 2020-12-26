@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="-8dp"
+    android:layout_marginTop="30dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_full_reg"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="44dp"
+        android:clickable="true"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toTopOf="@+id/cv_exm_det"
+        app:layout_constraintEnd_toStartOf="@+id/cv_profile"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/lay45"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/register_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif"
+            android:text="Registration"
+            android:textColor="#B4000000" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_abt_us"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:translationZ="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toStartOf="@+id/cv_practice"
+        app:layout_constraintStart_toStartOf="@+id/cv_results"
+        app:layout_constraintTop_toBottomOf="@+id/cv_results">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="65dp"
+            android:fontFamily="sans-serif"
+            android:text="About us"
+            android:textColor="#B4000000" />
+
+        <ImageView
+            android:id="@+id/lay17"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/about_us_icon" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_practice"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="60dp"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:translationZ="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="@+id/cv_rewards"
+        app:layout_constraintTop_toTopOf="@+id/cv_abt_us">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="65dp"
+            android:fontFamily="sans-serif"
+            android:text="Practice Zone"
+            android:textColor="#B4000000" />
+
+        <ImageView
+            android:id="@+id/lay16"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/practice_zone_icon" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_rewards"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="1dp"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:translationZ="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toTopOf="@+id/cv_practice"
+        app:layout_constraintEnd_toEndOf="@+id/cv_exm_det"
+        app:layout_constraintStart_toEndOf="@+id/cv_results">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="75dp"
+            android:fontFamily="sans-serif"
+            android:text="Awards"
+            android:textAlignment="center"
+            android:textColor="#B4000000" />
+
+        <ImageView
+            android:id="@+id/lay15"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/awards_icon" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_results"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:translationZ="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="@+id/cv_exm_reg"
+        app:layout_constraintStart_toStartOf="@+id/cv_exm_reg"
+        app:layout_constraintTop_toTopOf="@+id/cv_rewards">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="75dp"
+            android:fontFamily="sans-serif"
+            android:text="Results"
+            android:textColor="#B4000000" />
+
+        <ImageView
+            android:id="@+id/lay14"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/results_icon" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_exm_det"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:translationZ="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toTopOf="@+id/cv_results"
+        app:layout_constraintEnd_toEndOf="@+id/cv_profile"
+        app:layout_constraintStart_toEndOf="@+id/cv_exm_reg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="62dp"
+            android:fontFamily="sans-serif"
+            android:text="Exam\nDetails"
+            android:textAlignment="center"
+            android:textColor="#B4000000" />
+
+        <ImageView
+            android:id="@+id/lay13"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/exam_details_icon" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_exm_reg"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="10dp"
+        android:translationZ="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="@+id/cv_full_reg"
+        app:layout_constraintStart_toStartOf="@+id/cv_full_reg"
+        app:layout_constraintTop_toTopOf="@+id/cv_exm_det">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="65dp"
+            android:fontFamily="sans-serif"
+            android:text="Exam \nRegistration"
+            android:textAlignment="center"
+            android:textColor="#B4000000" />
+
+        <ImageView
+            android:id="@+id/lay12"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/exam_registration" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_profile"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:translationZ="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="@+id/cv_full_reg"
+        app:layout_constraintStart_toEndOf="@+id/cv_full_reg"
+        app:layout_constraintTop_toTopOf="@+id/cv_full_reg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif"
+            android:text="Profile"
+            android:textColor="#B4000000" />
+
+        <ImageView
+            android:id="@+id/lay7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/profile_icon" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

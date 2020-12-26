@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Activities.FullRegistrationActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:fitsSystemWindows="true"
+            app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Display1"
+            app:toolbarId="@+id/toolbar">
+
+            <com.massivedisaster.widget.ArcToolbarView
+                android:id="@+id/arcToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/toolbar_gradient" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin">
+            </androidx.appcompat.widget.Toolbar>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/mise" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_login"
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_100"
+                android:src="@drawable/mob_logo" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/padding_5"
+                android:layout_marginTop="@dimen/padding_20"
+                android:text="@string/fullRegistration"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_30"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/vw1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_marginTop="@dimen/padding_10"
+                android:visibility="visible">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_10"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Online" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_50"
+                        android:text="Offline" />
+
+                </RadioGroup>
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/login_cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vw1"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/padding_30"
+                app:cardBackgroundColor="@color/lightBlue"
+                app:cardCornerRadius="@dimen/padding_5"
+                app:cardElevation="@dimen/padding_2"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_20">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_sourcespin"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/padding_45"
+                        android:layout_marginTop="@dimen/padding_10"
+                        android:background="@drawable/text_bg_selector"
+                        android:paddingLeft="@dimen/padding_5"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/iv_sourcespin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:paddingLeft="@dimen/padding_10"
+                            android:src="@drawable/ic_source" />
+
+                        <Spinner
+                            android:id="@+id/sourcespin"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/padding_5"
+                            android:layout_toRightOf="@+id/iv_sourcespin"
+                            android:layout_weight="1"
+                            android:entries="@array/source"
+                            android:imeOptions="actionNext"
+                            android:popupBackground="@drawable/spinner_background"
+                            android:spinnerMode="dropdown"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_14"
+                            app:backgroundTint="@color/colorAccent" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/padding_45"
+                        android:layout_below="@+id/rl_sourcespin"
+                        android:layout_marginTop="@dimen/padding_10"
+                        android:background="@drawable/text_bg_selector"
+                        android:paddingLeft="@dimen/padding_5">
+
+                        <ImageView
+                            android:id="@+id/iv_gender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:paddingLeft="@dimen/padding_10"
+                            android:src="@drawable/ic_gender" />
+
+                        <Spinner
+                            android:id="@+id/gender"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/padding_5"
+                            android:layout_toRightOf="@+id/iv_gender"
+                            android:layout_weight="1"
+                            android:entries="@array/gender"
+                            android:imeOptions="actionNext"
+                            android:popupBackground="@drawable/spinner_background"
+                            android:spinnerMode="dropdown"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_14"
+                            app:backgroundTint="@color/colorAccent" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_gender"
+                        android:layout_marginTop="@dimen/padding_10">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding_10">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/input_layout_dob"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/padding_45"
+                                android:layout_centerVertical="true"
+                                app:hintEnabled="false">
+
+                                <EditText
+                                    android:id="@+id/et_end_date"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/text_bg_selector"
+                                    android:clickable="true"
+                                    android:cursorVisible="false"
+                                    android:drawableLeft="@drawable/ic_calendar"
+                                    android:drawablePadding="@dimen/padding_10"
+                                    android:editable="false"
+                                    android:focusable="false"
+                                    android:hint="@string/dob"
+                                    android:inputType="date"
+                                    android:paddingLeft="@dimen/padding_10"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_14" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_guardian_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_dob"
+                        android:layout_marginTop="@dimen/padding_10">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding_10">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/input_layout_guardian_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/padding_45"
+                                android:layout_centerVertical="true"
+                                app:hintEnabled="false">
+
+                                <EditText
+                                    android:id="@+id/gurdianName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/text_bg_selector"
+                                    android:drawableLeft="@drawable/ic_guardian"
+                                    android:drawablePadding="@dimen/padding_10"
+                                    android:hint="@string/guardian"
+                                    android:inputType="text"
+                                    android:paddingLeft="@dimen/padding_10"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_14" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_relation"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/padding_45"
+                        android:layout_below="@+id/rl_guardian_name"
+                        android:layout_marginTop="@dimen/padding_10"
+                        android:background="@drawable/text_bg_selector"
+                        android:paddingLeft="@dimen/padding_5">
+
+                        <ImageView
+                            android:id="@+id/iv_relation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:paddingLeft="@dimen/padding_10"
+                            android:src="@drawable/ic_relations" />
+
+                        <Spinner
+                            android:id="@+id/relList"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/padding_5"
+                            android:layout_toRightOf="@+id/iv_relation"
+                            android:layout_weight="1"
+                            android:entries="@array/relation"
+                            android:imeOptions="actionNext"
+                            android:popupBackground="@drawable/spinner_background"
+                            android:spinnerMode="dropdown"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_14"
+                            app:backgroundTint="@color/colorAccent" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_residential_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_relation"
+                        android:layout_marginTop="@dimen/padding_10">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding_10">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/input_layout_res_address"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/padding_45"
+                                android:layout_centerVertical="true"
+                                app:hintEnabled="false">
+
+                                <EditText
+                                    android:id="@+id/resaddress"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/text_bg_selector"
+                                    android:drawableLeft="@drawable/ic_address"
+                                    android:drawablePadding="@dimen/padding_10"
+                                    android:hint="@string/resAddress"
+                                    android:inputType="text"
+                                    android:paddingLeft="@dimen/padding_10"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_14" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_residential_address"
+                        android:layout_marginTop="@dimen/padding_10">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding_10">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/input_layout_city"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/padding_45"
+                                android:layout_centerVertical="true"
+                                app:hintEnabled="false">
+
+                                <EditText
+                                    android:id="@+id/city"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/text_bg_selector"
+                                    android:drawableLeft="@drawable/ic_city"
+                                    android:drawablePadding="@dimen/padding_10"
+                                    android:hint="@string/city"
+                                    android:inputType="text"
+                                    android:paddingLeft="@dimen/padding_10"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_14" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_district"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_city"
+                        android:layout_marginTop="@dimen/padding_10">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding_10">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/input_layout_district"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/padding_45"
+                                android:layout_centerVertical="true"
+                                app:hintEnabled="false">
+
+                                <EditText
+                                    android:id="@+id/district"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/text_bg_selector"
+                                    android:drawableLeft="@drawable/ic_district"
+                                    android:drawablePadding="@dimen/padding_10"
+                                    android:hint="@string/district"
+                                    android:inputType="text"
+                                    android:paddingLeft="@dimen/padding_10"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_14" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_district"
+                        android:layout_marginTop="@dimen/padding_10">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding_10">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/input_layout_state"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/padding_45"
+                                android:layout_centerVertical="true"
+                                app:hintEnabled="false">
+
+                                <EditText
+                                    android:id="@+id/state"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/text_bg_selector"
+                                    android:drawableLeft="@drawable/ic_state"
+                                    android:drawablePadding="@dimen/padding_10"
+                                    android:hint="@string/state"
+                                    android:inputType="text"
+                                    android:paddingLeft="@dimen/padding_10"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_14" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_pin_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_state"
+                        android:layout_marginTop="@dimen/padding_10">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding_10">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/input_layout_pin"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/padding_45"
+                                android:layout_centerVertical="true"
+                                app:hintEnabled="false">
+
+                                <EditText
+                                    android:id="@+id/pin"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/text_bg_selector"
+                                    android:drawableLeft="@drawable/ic_pin"
+                                    android:drawablePadding="@dimen/padding_10"
+                                    android:hint="@string/pin"
+                                    android:inputType="number"
+                                    android:paddingLeft="@dimen/padding_10"
+                                    android:maxLength="6"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_14" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_school_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_pin_code"
+                        android:layout_marginTop="@dimen/padding_10">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding_10">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/input_layout_school_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/padding_45"
+                                android:layout_centerVertical="true"
+                                app:hintEnabled="false">
+
+                                <EditText
+                                    android:id="@+id/schoolName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/text_bg_selector"
+                                    android:drawableLeft="@drawable/ic_campus"
+                                    android:drawablePadding="@dimen/padding_10"
+                                    android:hint="@string/schoolName"
+                                    android:inputType="text"
+                                    android:paddingLeft="@dimen/padding_10"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_14" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_school_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_school_name"
+                        android:layout_marginTop="@dimen/padding_10">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding_10">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/input_layout_school_city"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/padding_45"
+                                android:layout_centerVertical="true"
+                                app:hintEnabled="false">
+
+                                <EditText
+                                    android:id="@+id/schoolCity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/text_bg_selector"
+                                    android:drawableLeft="@drawable/ic_city"
+                                    android:drawablePadding="@dimen/padding_10"
+                                    android:hint="@string/schoolCity"
+                                    android:inputType="text"
+                                    android:paddingLeft="@dimen/padding_10"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_14" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_exam_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_school_city"
+                        android:layout_marginTop="@dimen/padding_10">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding_10">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/input_layout_exam_country"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/padding_45"
+                                android:layout_centerVertical="true"
+                                app:hintEnabled="false">
+
+                                <EditText
+                                    android:id="@+id/examCntry"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/text_bg_selector"
+                                    android:drawableLeft="@drawable/ic_country"
+                                    android:drawablePadding="@dimen/padding_10"
+                                    android:hint="@string/examCountry"
+                                    android:inputType="text"
+                                    android:paddingLeft="@dimen/padding_10"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_14" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_exam_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_exam_country"
+                        android:layout_marginTop="@dimen/padding_10">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding_10">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/input_layout_exam_state"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/padding_45"
+                                android:layout_centerVertical="true"
+                                app:hintEnabled="false">
+
+                                <EditText
+                                    android:id="@+id/examstate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/text_bg_selector"
+                                    android:drawableLeft="@drawable/ic_state"
+                                    android:drawablePadding="@dimen/padding_10"
+                                    android:hint="@string/examState"
+                                    android:inputType="text"
+                                    android:paddingLeft="@dimen/padding_10"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_14" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_exam_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_exam_state"
+                        android:layout_marginTop="@dimen/padding_10">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding_10">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/input_layout_exam_city"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/padding_45"
+                                android:layout_centerVertical="true"
+                                app:hintEnabled="false">
+
+                                <EditText
+                                    android:id="@+id/examcity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/text_bg_selector"
+                                    android:drawableLeft="@drawable/ic_city"
+                                    android:drawablePadding="@dimen/padding_10"
+                                    android:hint="@string/examCity"
+                                    android:inputType="text"
+                                    android:paddingLeft="@dimen/padding_10"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_14" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/next"
+                        android:layout_width="@dimen/padding_200"
+                        android:layout_height="@dimen/padding_45"
+                        android:layout_below="@+id/rl_exam_city"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="26dp"
+                        android:background="@drawable/button_bg"
+                        android:text="@string/submit"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_13" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

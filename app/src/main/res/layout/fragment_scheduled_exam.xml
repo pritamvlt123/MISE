@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScheduledExamFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/titleTxt"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:text="Class I to V"
+                android:gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:layout_height="50dp">
+
+
+            </TextView>
+
+
+            <LinearLayout
+                android:id="@+id/lay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_below="@+id/titleTxt"
+                android:padding="20dp">
+                <LinearLayout
+
+                    android:id="@+id/lay11"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:padding="10dp"
+                    android:background="@drawable/layout_bg">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:text="One subject">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:text="₹ 175">
+
+                    </TextView>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="#00000000"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:clickable="false"
+                        android:layout_marginTop="10dp"
+                        android:text="Pay"
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:id="@+id/lay12"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:padding="10dp"
+                    android:background="@drawable/layout_bg">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:text="Three subjects">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:text="₹ 500">
+
+                    </TextView>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#00000000"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="Pay
+"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_below="@+id/lay1"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp">
+                <LinearLayout
+
+                    android:id="@+id/lay21"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:padding="10dp"
+                    android:background="@drawable/layout_bg">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:text="Five subjects">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:text="₹ 750">
+
+                    </TextView>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="#00000000"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:clickable="false"
+                        android:layout_marginTop="10dp"
+                        android:text="Pay"
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:id="@+id/lay22"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:padding="10dp"
+                    android:background="@drawable/layout_bg">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:text="All subjects">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:text="₹ 950">
+
+                    </TextView>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#00000000"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="Pay
+"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/titleTxt2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:text="Class VI to XII"
+                android:gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:layout_below="@+id/lay2"
+                android:layout_height="50dp">
+
+
+            </TextView>
+            <LinearLayout
+                android:id="@+id/lay4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_below="@+id/titleTxt2"
+                android:padding="20dp">
+                <LinearLayout
+
+                    android:id="@+id/lay41"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:padding="10dp"
+                    android:background="@drawable/layout_bg">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:text="One subject">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:text="₹ 250">
+
+                    </TextView>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="#00000000"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:clickable="false"
+                        android:layout_marginTop="10dp"
+                        android:text="Pay"
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:id="@+id/lay42"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:padding="10dp"
+                    android:background="@drawable/layout_bg">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:text="Three subjects">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:text="₹ 650">
+
+                    </TextView>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#00000000"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="Pay
+"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_below="@+id/lay4"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp">
+                <LinearLayout
+
+                    android:id="@+id/lay51"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:padding="10dp"
+                    android:background="@drawable/layout_bg">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:text="Five subjects">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:text="₹ 850">
+
+                    </TextView>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="#00000000"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:clickable="false"
+                        android:layout_marginTop="10dp"
+                        android:text="Pay"
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:id="@+id/lay52"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:padding="10dp"
+                    android:background="@drawable/layout_bg">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:text="All subjects">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:text="₹ 1150">
+
+                    </TextView>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#00000000"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="Pay
+"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

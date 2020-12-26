@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">MISE</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email/Mobile</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string-array name="medium_List">
+        <item>--Select Medium--</item>
+        <item>Bengali</item>
+        <item>English</item>
+
+    </string-array>
+    <string-array name="class_List">
+        <item>--Select Class--</item>
+        <item>KG</item>
+        <item>I</item>
+        <item>II</item>
+        <item>III</item>
+        <item>IV</item>
+        <item>V</item>
+        <item>VI</item>
+        <item>VII</item>
+        <item>VIII</item>
+        <item>IX</item>
+        <item>X</item>
+        <item>XI</item>
+        <item>XII</item>
+
+    </string-array>
+    <string-array name="gender">
+        <item>--Select Gender--</item>
+        <item>Male</item>
+        <item>Female</item>
+
+    </string-array>
+    <string-array name="relation">
+        <item>--Select Relation--</item>
+        <item>Father</item>
+        <item>Mother</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="packageList">
+        <item>--Select Package--</item>
+        <item>Free package</item>
+        <item>Any one subject</item>
+        <item>Any three subjects</item>
+        <item>All subjects</item>
+    </string-array>
+
+    <string-array name="subjects">
+        <item>Select</item>
+        <item>Mathematics</item>
+        <item>English</item>
+        <item>Science</item>
+        <item>Social Studies</item>
+        <item>GK</item>
+        <item>Computer</item>
+        <item>Sports</item>
+    </string-array>
+    <string-array name="levels">
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Advanced</item>
+    </string-array>
+
+    <string-array name="questions">
+        <item>What is the world\'s highest mountain?</item>
+        <item>Grand Central Terminal, Park Avenue, New York is the world\'s</item>
+        <item>Entomology is the science that studies</item>
+        <item>Eritrea, which became the 182nd member of the UN in 1993, is in the continent of</item>
+        <item>Hitler party which came into power in 1933 is known as</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">John Doe</string>
+    <string name="nav_header_subtitle">johnDoe@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="title_activity_nav_drawer">NavDrawerActivity</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="generic_no_internet">We are sorry, unable to connect at this time, Please try again</string>
+    <string name="request_timeout">Request Timeout</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgotPassword">Forgot Password?</string>
+    <string name="password">Password</string>
+    <string name="emailAddress">Email/Mobile</string>
+    <string name="register">Register</string>
+    <string name="notRegister">Don\'t have an account?</string>
+    <string name="login">Login</string>
+    <string name="registration">Registration</string>
+    <string name="alreadyAccount">Already have an account?</string>
+    <string name="email">Email</string>
+    <string name="conpassword">Confirm Password</string>
+    <string name="mobile">Mobile</string>
+    <string name="fullName">Full Name</string>
+    <string name="fullRegistration">Full Registration</string>
+    <string name="dob">Date of Birth</string>
+    <string name="guardian">Guardian\'s Name</string>
+    <string name="resAddress">Residential Address</string>
+    <string name="city">City</string>
+    <string name="district">District</string>
+    <string name="state">State</string>
+    <string name="pin">Pin Code</string>
+    <string name="schoolName">School Name</string>
+    <string name="examState">Enter Exam State</string>
+    <string name="examCountry">Enter Exam Country</string>
+    <string name="schoolCity">School City</string>
+    <string name="examCity">Enter Exam City</string>
+    <string name="submit">Submit</string>
+    <string name="whoWeAre">Founded in the year 2009, the Minervaa Group aims at providing education to all and has been an active partner in many such charitable activities.We are a prominent name in the field of educational assessments and a one-stop solution for your HR-related needs. Besides partaking in charitable activities, the Group has spearheaded many new-age programs in the field of education to nurture young talents, make them future-ready, contribute to skilled Human Resources and prepare them to adapt the new normal easily.  The organization offers a plethora of opportunities that vary from the prestigious MISE and MockTest4You to Career Coupons Minervaa Honour, NEEST and my facility among several others. These programs are specially designed keeping in mind the changing job requirements and employment trends currently and in the upcoming years as well.</string>
+    <string name="aboutMise"><![CDATA[MISE or MINERVAA International Scholarship Examination is one of the best and prestigious scholarship examinations for students from KG to Class XII. This scientifically standardized assessment evaluation, available both online &amp; offline, is meant for students who want to excel in different academic fields for a better career and future.This scholarship examination is conducted once every year where schools at national and international level participate to ensure that their students get a chance to compete with their peers in subjects such as English, Arts and Painting, Abacus, Mathematics, Computer Skills to name a few. MISE is now becoming available in Indian languages like Bengali.  By taking these exams, students get the chance to compete in School Level Olympiads which further provide them with a plethora of awards and prizes. This increases the skills and talents in the kids, and also enhances the excellent competitiveness in them as well. With the help of this scholarship examination, students have a better way of life. It is a one-of-a-kind examination which involves the teachers, parents, and students for the assessment of candidate in order to test their academic excellence.]]></string>
+    <string name="ourTeam">The MISE Group Team comprises of motivated and highly skilled professionals who will work together for the betterment of the students. The search for a proper Olympiad trainer and experts has led the students to this interesting and amazing platform where they can get amazing support and suggestions. Our team is made with thinkers and motivators who take the chance with innovation and strive to provide proper results.</string>
+    <string name="whatWeDo">We bring ample opportunities for students aspiring to make a career in various fields of research. We strive to assist candidates in refining their academic excellence by conducting annual esteemed scholarship examinations within the major schools of India as well as overseas. It opens the windows for those who are willing to plunge into the world of academic talents to pursue their encoded employment goals with refined skills and approaches. The focused background of our team enables us to function smoothly. Instilling confidence in students and preparing them for future academic challenge is our guiding ethos.  We equip students with right advice and instructions, guiding them to make their own future interesting. With over 11 years of experience in this field, we provide with a great variety of assessment services – both offline and online assessment or scholarship test, career counseling online test, online scholarship exams, online Olympiad practice, and assessment test for school children. Through the amazing All India Talent Scholarship, the candidates have the chance to make sure that they are getting all the attention and help that they need. Students participate in these exams so that they can get awards and prizes which are going to be a further help in their education. The exam is a very transparent and functional Scholarship examination which enables the students to get some amazing options. Hence, in order to make sure that your children are getting a shot at the right education, choosing our services is the best for sure. Our team goes above and beyond to help students embark on a path to excellence by unlocking their potential and intellectual skills.</string>
+    <string-array name="source">
+        <item>--Select Source--</item>
+        <item>School</item>
+        <item>Coaching Centre</item>
+        <item>Individual</item>
+    </string-array>
+    <string-array name="examType">
+        <item>--Select Exam--</item>
+        <item>Instant Exam</item>
+        <item>Scheduled Exam</item>
+    </string-array>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="Home">Home</string>
+</resources>

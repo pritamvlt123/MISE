@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent"
+    tools:context=".ProfileBasicInfoFragment">
+    <LinearLayout
+    android:layout_width="match_parent"
+        android:orientation="vertical"
+    android:layout_height="wrap_content"
+        android:padding="10dp"
+        tools:ignore="MissingConstraints">
+
+    <RelativeLayout
+        android:id="@+id/layName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/nameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/kprogresshud_default_color"
+            android:text="Name">
+        </TextView>
+
+        <TextView
+            android:id="@+id/nameVal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/nameTxt"
+            android:gravity="right"
+            android:textSize="15dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="gravity"
+            android:textStyle="bold"
+            android:text="John">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/nameTxt"
+            android:layout_marginTop="10dp"
+            android:background="#EEEEEE"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailLay"
+        android:layout_below="@+id/layName"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/emailTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/kprogresshud_default_color"
+            android:text="Email">
+        </TextView>
+
+        <TextView
+            android:id="@+id/emailval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/emailTxt"
+            android:gravity="right"
+            android:textSize="15dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="gravity"
+            android:textStyle="bold"
+            android:text="abc@gmail.com">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/emailTxt"
+            android:layout_marginTop="10dp"
+            android:background="#EEEEEE"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mobileLay"
+        android:layout_below="@+id/emailLay"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/mobileTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/kprogresshud_default_color"
+            android:text="Mobile">
+        </TextView>
+
+        <TextView
+            android:id="@+id/mobileVal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/mobileTxt"
+            android:gravity="right"
+            android:textSize="15dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="gravity"
+            android:textStyle="bold"
+            android:text="8976543210">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/mobileTxt"
+            android:layout_marginTop="10dp"
+            android:background="#EEEEEE"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/classLay"
+        android:layout_below="@+id/mobileLay"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/classTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/kprogresshud_default_color"
+            android:text="Class">
+        </TextView>
+
+        <TextView
+            android:id="@+id/classVal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/classTxt"
+            android:gravity="right"
+            android:textSize="15dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="gravity"
+            android:textStyle="bold"
+            android:text="V">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/classTxt"
+            android:layout_marginTop="10dp"
+            android:background="#EEEEEE"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/genderLay"
+        android:layout_below="@+id/classLay"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/genderTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/kprogresshud_default_color"
+            android:text="Gender">
+        </TextView>
+
+        <TextView
+            android:id="@+id/genderVal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/genderTxt"
+            android:gravity="right"
+            android:textSize="15dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="gravity"
+            android:textStyle="bold"
+            android:text="Female">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/genderTxt"
+            android:layout_marginTop="10dp"
+            android:background="#EEEEEE"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dobLay"
+        android:layout_below="@+id/genderLay"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/dobTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/kprogresshud_default_color"
+            android:text="Date of Birth">
+        </TextView>
+
+        <TextView
+            android:id="@+id/dobval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/dobTxt"
+            android:gravity="right"
+            android:textSize="15dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="gravity"
+            android:textStyle="bold"
+            android:text="02/12/1999">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/dobTxt"
+            android:layout_marginTop="10dp"
+            android:background="#EEEEEE"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gurdianLay"
+        android:layout_below="@+id/dobLay"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/gurdianTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/kprogresshud_default_color"
+            android:text="Guardian's Name">
+        </TextView>
+
+        <TextView
+            android:id="@+id/gurdianVal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/gurdianTxt"
+            android:gravity="right"
+            android:textSize="15dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="gravity"
+            android:textStyle="bold"
+            android:text="David">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/gurdianTxt"
+            android:layout_marginTop="10dp"
+            android:background="#EEEEEE"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relationLay"
+        android:layout_below="@+id/gurdianLay"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/relTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/kprogresshud_default_color"
+            android:text="Relation">
+        </TextView>
+
+        <TextView
+            android:id="@+id/relVal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/relTxt"
+            android:gravity="right"
+            android:textSize="15dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="gravity"
+            android:textStyle="bold"
+            android:text="Father">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/relTxt"
+            android:layout_marginTop="10dp"
+            android:background="#EEEEEE"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

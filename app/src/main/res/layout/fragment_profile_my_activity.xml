@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".ProfileMyActivityFragment">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+
+        android:id="@+id/layAc1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+
+        android:background="@drawable/button_bg4">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_marginTop="5dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/exam2"/>
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#00000000"
+            android:textStyle="bold"
+            android:textColor="@color/cardview_dark_background"
+            android:textAlignment="textStart"
+            android:text="Exams Appeared"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img1"
+            android:clickable="false"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn1"
+            android:gravity="right"
+            android:textSize="15dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="gravity"
+            android:layout_alignBaseline="@+id/btn1"
+            android:textStyle="bold"
+            android:text="0">
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/layac2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:layout_below="@+id/layAc1"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_bg4">
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/schedexam"/>
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#00000000"
+            android:textStyle="bold"
+            android:textColor="@color/cardview_dark_background"
+            android:textAlignment="textStart"
+            android:text="Exams Scheduled"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img2"
+            android:clickable="false"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn2"
+            android:gravity="right"
+            android:textSize="15dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="gravity"
+            android:layout_alignBaseline="@+id/btn2"
+            android:textStyle="bold"
+            android:text="0">
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/layac3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:layout_below="@+id/layac2"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_bg4">
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/calendar"/>
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#00000000"
+            android:textStyle="bold"
+            android:textColor="@color/cardview_dark_background"
+            android:textAlignment="textStart"
+            android:text="Average Marks"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img3"
+            android:clickable="false"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn3"
+            android:gravity="right"
+            android:textSize="15dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="gravity"
+            android:layout_alignBaseline="@+id/btn3"
+            android:textStyle="bold"
+            android:text="0">
+        </TextView>
+
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:id="@+id/layac4"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:layout_below="@+id/layac3"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_bg4">
+
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/grade"/>
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#00000000"
+            android:textStyle="bold"
+            android:textColor="@color/cardview_dark_background"
+            android:textAlignment="textStart"
+            android:text="Registered Date"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img4"
+            android:clickable="false"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn4"
+            android:gravity="right"
+            android:textSize="15dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="gravity"
+            android:layout_alignBaseline="@+id/btn4"
+            android:textStyle="bold"
+            android:text="2020-09-15 11:08:27">
+        </TextView>
+
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:id="@+id/layupgrd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/layac4"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bg4">
+
+        <Button
+            android:id="@+id/btnup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="textStart"
+            android:text="Upgrade"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="false"
+            />
+        <ImageView
+            android:id="@+id/img5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/btnup"
+            android:src="@drawable/bill"/>
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#00000000"
+            android:textStyle="bold"
+            android:textColor="@color/cardview_dark_background"
+            android:textAlignment="textStart"
+            android:text="Upgrade Package"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img5"
+            android:layout_below="@+id/btnup"
+            android:clickable="false"
+            />
+        <ImageView
+            android:id="@+id/img6"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/btn5"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/clas"/>
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#00000000"
+            android:textStyle="bold"
+            android:textColor="@color/cardview_dark_background"
+            android:textAlignment="textStart"
+            android:text="Update Class"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img6"
+            android:layout_below="@+id/btn5"
+            android:layout_marginTop="10dp"
+            android:clickable="false"
+            android:layout_marginBottom="10dp"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+</FrameLayout>

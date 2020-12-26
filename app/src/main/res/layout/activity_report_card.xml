@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".ReportCardActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@drawable/button_bg4"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            app:srcCompat="@drawable/mob_logo" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_below="@+id/imageView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/design_default_color_secondary"
+            android:text="MARKS STATEMENT" />
+        <TextView
+            android:id="@+id/school"
+            android:layout_below="@+id/title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/cardview_shadow_start_color"
+            android:text="School" />
+        <TextView
+            android:id="@+id/sname"
+            android:layout_below="@+id/school"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAlignment="textStart"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/cardview_dark_background"
+            android:text="name" />
+        <TextView
+            android:id="@+id/sfname"
+            android:layout_below="@+id/sname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAlignment="textStart"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/cardview_dark_background"
+            android:text="name" />
+        <TextView
+            android:id="@+id/srollno"
+            android:layout_below="@+id/sfname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAlignment="textStart"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/cardview_dark_background"
+            android:text="name" />
+        <TextView
+            android:id="@+id/cls"
+            android:layout_below="@+id/srollno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAlignment="textStart"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/cardview_dark_background"
+            android:text="name" />
+        <LinearLayout
+            android:id="@+id/rpl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/cls"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:background="@color/colorPrimaryDark"
+            android:textAlignment="center"
+            android:text="Subjects" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:layout_marginLeft="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:textAlignment="center"
+            android:text="Marks Obtained" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/rpl2"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/rpl1"
+            android:layout_marginTop="5dp"
+            android:background="@color/kprogresshud_grey_color"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+        <TextView
+            android:id="@+id/subj1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="80% to 89%"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/mrks1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:text="Gift Voucher of Rs.750/- + MC"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="14dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/rpl3"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/rpl2"
+            android:layout_marginTop="5dp"
+            android:background="@color/kprogresshud_grey_color"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/subj2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="80% to 89%"
+                android:textAlignment="center"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/mrks2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:text="Gift Voucher of Rs.750/- + MC"
+                android:textAlignment="center"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="14dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/rpl4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/rpl3"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_weight="3"
+                android:text="Total Marks	"
+                android:layout_width="0dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/totalmrk"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"
+                android:layout_weight="2"
+                android:text="Orde"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/rpl5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/rpl4"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_weight="3"
+                android:text="Total Marks Obtained"
+                android:layout_width="0dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/obtotalmrk"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"
+                android:layout_weight="2"
+                android:text="Orde"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/rpl6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/rpl5"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_weight="3"
+                android:text="Percentage"
+                android:layout_width="0dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/pertotalmrk"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"
+                android:layout_weight="2"
+                android:text="Orde"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/rpl7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/rpl6"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_weight="3"
+                android:text="Grade"
+                android:layout_width="0dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/grd"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"
+                android:layout_weight="2"
+                android:text="Orde"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/rpl8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/rpl7"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_weight="3"
+                android:text="Remarks"
+                android:layout_width="0dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/rmrk"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"
+                android:layout_weight="2"
+                android:text="Orde"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
